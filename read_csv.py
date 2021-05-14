@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-LICENCE: GPLv3
 import pandas as pd
 import matplotlib.pyplot as plt
 import sys
