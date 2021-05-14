@@ -2,8 +2,10 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
 
-f = open("2021-05-14 09:20:48.262099.txt", "r")
+#f = open("2021-05-14 09:20:48.262099.txt", "r")
+f = open(sys.argv[1], "r")
 f2 = open("tmp.txt", "w")
 
 i = 0
