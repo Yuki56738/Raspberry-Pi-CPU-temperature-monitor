@@ -4,8 +4,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sys
 
-#f = open("2021-05-14 09:20:48.262099.txt", "r")
-f = open(sys.argv[1], "r")
+try:
+  f = open(sys.argv[1], "r")
+except:
+    print(f"{sys.argv[0]} <csv file name>")
+    sys.exit(1)
 f2 = open("tmp.txt", "w")
 
 i = 0
@@ -29,5 +32,3 @@ plt.ylabel(df.keys()[1])
 
 plt.plot(x, y, linestyle="solid", marker="o")
 plt.show()
-#plt.plot(i, df["num2"], marker="o")
-#plt.show()
